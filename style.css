@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+/* styles.css */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+}
+
+.calculator {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 250px;
+}
+
+.display {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: right;
+    font-size: 2em;
+    border-bottom: 1px solid #444;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3px;
+}
+
+.btn {
+    background: #f9f9f9;
+    border: none;
+    padding: 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.btn.number {
+    background: #e0e0e0;
+}
+
+.btn.operator {
+    background: #f77f7f;
+    color: #fff;
+}
+
+.btn.operator:hover {
+    background: #ff4d4d;
+}
+
+.btn.number:hover {
+    background: #c0c0c0;
+}
+
+.btn:active {
+    background: #bbb;
+}
+
+.btn[data-value="C"] {
+    background: #ff9f9f;
+}
+
+.btn[data-value="="] {
+    background: #4caf50;
+    color: #fff;
+}
+
+.btn[data-value="="]:hover {
+    background: #388e3c;
+}
